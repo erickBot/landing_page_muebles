@@ -4,7 +4,6 @@ import 'package:laning_page/src/ui/shared/custom_app_menu.dart';
 import 'package:laning_page/src/ui/views/catalog_view.dart';
 import 'package:laning_page/src/ui/views/contact_view.dart';
 import 'package:laning_page/src/ui/views/home_view.dart';
-import 'package:laning_page/src/ui/views/location_view.dart';
 import 'package:laning_page/src/ui/views/about_view.dart';
 import 'package:provider/provider.dart';
 
