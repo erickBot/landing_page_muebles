@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:laning_page/src/providers/page_provider.dart';
 import 'package:laning_page/src/ui/shared/custom_menu_item.dart';
+import 'package:laning_page/src/utils/color.dart';
 import 'package:provider/provider.dart';
 
 class CustomAppMenu extends StatefulWidget {
@@ -46,7 +47,7 @@ class _CustomAppMenuState extends State<CustomAppMenu>
           padding: EdgeInsets.symmetric(horizontal: 10),
           width: 150,
           height: isOpen ? 308 : 50,
-          color: Colors.black,
+          color: kColorPrimario,
           child: Column(
             children: [
               _MenuTitle(isOpen: isOpen, controller: controller),

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:laning_page/src/providers/data_provider.dart';
+import 'package:laning_page/src/providers/mueble_provider.dart';
 import 'package:laning_page/src/providers/page_provider.dart';
+import 'package:laning_page/src/providers/product_provider.dart';
 import 'package:laning_page/src/router/router.dart';
 import 'package:provider/provider.dart';
 
@@ -9,7 +12,12 @@ class AppState extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [ChangeNotifierProvider(create: (_) => PageProvider())],
+      providers: [
+        ChangeNotifierProvider(create: (_) => PageProvider()),
+        ChangeNotifierProvider(create: (_) => DataProvider()),
+        ChangeNotifierProvider(create: (_) => ProductProvider()),
+        ChangeNotifierProvider(create: (_) => MuebleProvider()),
+      ],
       child: MyApp(),
     );
   }

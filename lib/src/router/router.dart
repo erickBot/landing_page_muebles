@@ -7,6 +7,8 @@ class Flurorouter {
   static void configureRoutes() {
     // Rutas
     router.define('/:page', handler: homeHandler);
+    router.define('/catalogo/muebles', handler: mueblesHandler);
+    router.define('/catalogo/muebles/detail', handler: detailmuebleHandler);
 
     // 404
     router.notFoundHandler = homeHandler;

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:laning_page/src/utils/color.dart';
 
 class CustomMenuItem extends StatefulWidget {
-
   final String text;
   final Function onPressed;
   final int delay;
@@ -11,8 +11,8 @@ class CustomMenuItem extends StatefulWidget {
   const CustomMenuItem({
     Key? key,
     required this.text,
-    required this.onPressed, 
-    this.delay = 0
+    required this.onPressed,
+    this.delay = 0,
   }) : super(key: key);
 
   @override
@@ -20,7 +20,6 @@ class CustomMenuItem extends StatefulWidget {
 }
 
 class _CustomMenuItemState extends State<CustomMenuItem> {
-
   bool isHover = false;
 
   @override
@@ -28,21 +27,21 @@ class _CustomMenuItemState extends State<CustomMenuItem> {
     return FadeInLeft(
       from: 10,
       duration: Duration(milliseconds: 150),
-      delay: Duration( milliseconds: widget.delay ),
+      delay: Duration(milliseconds: widget.delay),
       child: MouseRegion(
-        onEnter: ( _ ) => setState(() => isHover = true ),
-        onExit: ( _ ) => setState(() => isHover = false ),
+        onEnter: (_) => setState(() => isHover = true),
+        onExit: (_) => setState(() => isHover = false),
         child: GestureDetector(
           onTap: () => widget.onPressed(),
           child: AnimatedContainer(
-            duration: Duration( milliseconds: 300 ),
+            duration: Duration(milliseconds: 300),
             width: 150,
             height: 50,
-            color: isHover ? Colors.pinkAccent : Colors.transparent,
+            color: isHover ? kColorPrecio : Colors.transparent,
             child: Center(
               child: Text(
                 widget.text,
-                style: GoogleFonts.roboto( fontSize: 20, color: Colors.white )
+                style: GoogleFonts.roboto(fontSize: 20, color: Colors.white),
               ),
             ),
           ),

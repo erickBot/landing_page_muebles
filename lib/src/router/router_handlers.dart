@@ -1,6 +1,8 @@
 import 'package:fluro/fluro.dart';
 import 'package:laning_page/src/providers/page_provider.dart';
+import 'package:laning_page/src/ui/pages/detail_page.dart';
 import 'package:laning_page/src/ui/pages/home_page.dart';
+import 'package:laning_page/src/ui/pages/muebles_page.dart';
 import 'package:provider/provider.dart';
 
 final homeHandler = Handler(
@@ -12,5 +14,17 @@ final homeHandler = Handler(
 
       return HomePage();
     }
+  },
+);
+
+final mueblesHandler = Handler(
+  handlerFunc: (context, params) {
+    return MueblesPage(); // Página independiente
+  },
+);
+
+final detailmuebleHandler = Handler(
+  handlerFunc: (context, params) {
+    return DetailPage(); // Página independiente
   },
 );
