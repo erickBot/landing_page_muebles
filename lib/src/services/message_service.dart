@@ -5,7 +5,7 @@ import 'package:laning_page/src/api/backend.dart';
 import 'package:laning_page/src/models/response_api.dart';
 
 class MessageService {
-  final String _url = Backend.apiDev;
+  final String _url = Backend.apiProd;
   final String _api = '/api/consultas';
 
   BuildContext? context;
@@ -20,7 +20,7 @@ class MessageService {
     String message,
   ) async {
     try {
-      Uri url = Uri.http(_url, '$_api/enviar');
+      Uri url = Uri.https(_url, '$_api/enviar');
 
       Map<String, String> headers = {'Content-type': 'application/json'};
 

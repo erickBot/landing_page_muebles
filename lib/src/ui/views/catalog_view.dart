@@ -170,7 +170,7 @@ class _ProductCardState extends State<_ProductCard> {
                   imageUrl: widget.mueble.imageUrl!,
                   fit: BoxFit.cover,
                   baseColor: kColorFondo,
-                  highlightColor: kColorPrimario,
+                  highlightColor: kColorFondoD,
                   width: double.infinity,
                   //height: isMobile ? 200 : 300,
                 ),

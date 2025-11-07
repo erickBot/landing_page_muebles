@@ -166,7 +166,7 @@ class HomeView extends StatelessWidget {
                                 imageUrl: element.image!,
                                 fit: BoxFit.cover,
                                 baseColor: kColorFondo,
-                                highlightColor: kColorPrimario,
+                                highlightColor: kColorFondoD,
                                 width: isMobile ? double.infinity : 400,
                                 height: isSmall
                                     ? 165

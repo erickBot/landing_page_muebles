@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:laning_page/src/providers/data_provider.dart';
 import 'package:laning_page/src/services/message_service.dart';
-import 'package:laning_page/src/ui/widgets/message.dart';
 import 'package:laning_page/src/utils/color.dart';
 import 'package:provider/provider.dart';
 import 'package:universal_html/html.dart' as html;

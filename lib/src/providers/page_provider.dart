@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:universal_html/html.dart' as html;
 
 class PageProvider extends ChangeNotifier {
-  PageController scrollController = PageController();
+  PageController scrollController = PageController(
+    viewportFraction: 1.0,
+    keepPage: true,
+  );
 
   final List<String> _pages = ['inicio', 'catalogo', 'nosotros', 'contacto'];
   int _currentIndex = 0;

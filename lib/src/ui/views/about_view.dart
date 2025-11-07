@@ -116,7 +116,7 @@ class AboutView extends StatelessWidget {
                             imageUrl: value.currentUtil.imageUrl!,
                             fit: BoxFit.cover,
                             baseColor: kColorFondo,
-                            highlightColor: kColorPrimario,
+                            highlightColor: kColorFondoD,
                             width: double.infinity,
                             height: isMobile ? 200 : 300,
                           ),

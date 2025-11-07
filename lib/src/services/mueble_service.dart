@@ -6,7 +6,7 @@ import 'package:laning_page/src/models/mueble.dart';
 import 'package:laning_page/src/models/response_api.dart';
 
 class MuebleService {
-  final String _url = Backend.apiDev;
+  final String _url = Backend.apiProd;
   final String _api = '/api/muebles';
 
   BuildContext? context;
@@ -17,7 +17,7 @@ class MuebleService {
 
   Future<List<Mueble>> getAll() async {
     try {
-      Uri url = Uri.http(_url, '$_api/getAll');
+      Uri url = Uri.https(_url, '$_api/getAll');
 
       Map<String, String> headers = {'Content-type': 'application/json'};
 

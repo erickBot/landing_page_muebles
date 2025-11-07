@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
@@ -21,22 +22,33 @@ class ShimmerNetworkImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.network(
+    return CachedNetworkImage(
       width: width,
-      imageUrl,
+      imageUrl: imageUrl,
       fit: fit,
-      // 👇 Se usa el loadingBuilder para aplicar el shimmer mientras carga
-      loadingBuilder: (context, child, loadingProgress) {
-        if (loadingProgress == null) return child; // Imagen cargada ✅
-        return Shimmer.fromColors(
-          baseColor: baseColor,
-          highlightColor: highlightColor,
-          child: Container(height: height, width: width, color: Colors.white),
-        );
-      },
-      errorBuilder: (context, error, stackTrace) {
-        return const Icon(Icons.broken_image, color: Colors.grey);
-      },
+      placeholder: (context, url) => Shimmer.fromColors(
+        baseColor: baseColor,
+        highlightColor: highlightColor,
+        child: Container(height: height, width: width, color: Colors.white),
+      ),
+      errorWidget: (context, url, error) => const Icon(Icons.error),
     );
+    // return Image.network(
+    //   width: width,
+    //   imageUrl,
+    //   fit: fit,
+    //   // 👇 Se usa el loadingBuilder para aplicar el shimmer mientras carga
+    //   loadingBuilder: (context, child, loadingProgress) {
+    //     if (loadingProgress == null) return child; // Imagen cargada ✅
+    //     return Shimmer.fromColors(
+    //       baseColor: baseColor,
+    //       highlightColor: highlightColor,
+    //       child: Container(height: height, width: width, color: Colors.white),
+    //     );
+    //   },
+    //   errorBuilder: (context, error, stackTrace) {
+    //     return const Icon(Icons.broken_image, color: Colors.grey);
+    //   },
+    // );
   }
 }

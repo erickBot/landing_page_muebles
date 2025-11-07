@@ -178,7 +178,7 @@ class _GaleriaMuebleState extends State<GaleriaMueble> {
                 imageUrl: product.images![imagenSeleccionada],
                 fit: BoxFit.contain,
                 baseColor: kColorFondo,
-                highlightColor: kColorPrimario,
+                highlightColor: kColorFondoD,
                 width: double.infinity,
                 //height: isMobile ? 200 : 300,
               ),
