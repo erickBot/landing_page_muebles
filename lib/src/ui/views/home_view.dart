@@ -59,18 +59,44 @@ class HomeView extends StatelessWidget {
                           : CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
-                          '✨ Tu mueble',
-                          textAlign: isMobile
-                              ? TextAlign.center
-                              : TextAlign.start,
-                          style: GoogleFonts.lato(
-                            fontSize: isMobile ? 36 : 50,
-                            color: Color(0xFF1A1E2C),
-                            fontWeight: FontWeight.w800,
-                            letterSpacing: -0.5,
-                            height: 1.2,
-                          ),
+                        // SizedBox(
+                        //   width: 200,
+                        //   child: Image(
+                        //     image: AssetImage('assets/icon/icon.png'),
+                        //     fit: BoxFit.contain,
+                        //   ),
+                        // ),
+                        Row(
+                          children: [
+                            // Container(
+                            //   width: 80,
+                            //   height: 80,
+                            //   decoration: BoxDecoration(
+                            //     borderRadius: BorderRadius.circular(20),
+                            //     color: kColorTexto,
+                            //   ),
+                            //   child: ClipRRect(
+                            //     borderRadius: BorderRadius.circular(20),
+                            //     child: Image(
+                            //       image: AssetImage('assets/icon/icon.png'),
+                            //       fit: BoxFit.cover,
+                            //     ),
+                            //   ),
+                            // ),
+                            Text(
+                              '✨ Tu mueble',
+                              textAlign: isMobile
+                                  ? TextAlign.center
+                                  : TextAlign.start,
+                              style: GoogleFonts.lato(
+                                fontSize: isMobile ? 36 : 50,
+                                color: Color(0xFF1A1E2C),
+                                fontWeight: FontWeight.w800,
+                                letterSpacing: -0.5,
+                                height: 1.2,
+                              ),
+                            ),
+                          ],
                         ),
                         const SizedBox(height: 20),
                         Text(
@@ -101,7 +127,7 @@ class HomeView extends StatelessWidget {
                         ),
                         const SizedBox(height: 20),
                         Text(
-                          'Ya seas carpintero, estudiante o aficionado, aquí encontrarás planos exactos, modernos y 100% funcionales, listos para cortar, ensamblar y vender.',
+                          'Ya seas carpintero, estudiante o aficionado, aquí encontrarás planos exactos, modernos y 100% funcionales, listos para cortar y armar.',
                           textAlign: isMobile
                               ? TextAlign.center
                               : TextAlign.start,

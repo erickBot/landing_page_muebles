@@ -36,7 +36,7 @@ class LoadingPage extends StatelessWidget {
                 ),
                 SizedBox(height: 28),
                 Text(
-                  'Cargando MelaminaPro...',
+                  'Cargando Tu-Mueble.com...',
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,

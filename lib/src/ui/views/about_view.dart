@@ -74,7 +74,7 @@ class AboutView extends StatelessWidget {
                           ),
                           const SizedBox(height: 12),
                           Text(
-                            'MelaminaPro nació con la misión de ayudar a carpinteros, diseñadores y aficionados a convertir sus ideas '
+                            'Tu-mueble.com nació con la misión de ayudar a carpinteros, diseñadores y aficionados a convertir sus ideas '
                             'en proyectos reales. Nos especializamos en la creación de planos de muebles de melamina listos para fabricar, '
                             'con medidas exactas, instrucciones claras y diseños modernos.',
                             textAlign: isMobile
