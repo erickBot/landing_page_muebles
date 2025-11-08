@@ -5,21 +5,12 @@ import 'package:laning_page/src/providers/data_provider.dart';
 import 'package:laning_page/src/ui/widgets/shimmer_network_image.dart';
 import 'package:laning_page/src/utils/color.dart';
 import 'package:provider/provider.dart';
-import 'package:shimmer/shimmer.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final List<String> imagenes = [
-      'assets/img/mueble_cocina.jpg',
-      'assets/img/mueble_closet.png',
-      'assets/img/mueble_escritorio.png',
-      'assets/img/mueble_tv.png',
-      'assets/img/mueble_comoda.png',
-    ];
-
     return LayoutBuilder(
       builder: (context, constraints) {
         bool isMobile = constraints.maxWidth < 800;

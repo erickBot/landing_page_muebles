@@ -1,4 +1,3 @@
-import 'package:awesome_icons/awesome_icons.dart';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -9,44 +8,10 @@ import 'package:laning_page/src/router/router.dart';
 import 'package:laning_page/src/ui/widgets/shimmer_network_image.dart';
 import 'package:laning_page/src/utils/color.dart';
 import 'package:provider/provider.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class CatalogView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final List<Map<String, String>> productos = [
-      {
-        'nombre': 'Mueble de Cocina Moderna',
-        'precio': 'USD 29.00',
-        'imagen': 'assets/img/mueble_cocina.jpg',
-      },
-      {
-        'nombre': 'Closet Minimalista 3 Puertas',
-        'precio': 'USD 25.00',
-        'imagen': 'assets/img/mueble_closet.png',
-      },
-      {
-        'nombre': 'Escritorio de Oficina Compacto',
-        'precio': 'USD 19.00',
-        'imagen': 'assets/img/mueble_escritorio.png',
-      },
-      {
-        'nombre': 'Centro de Entretenimiento TV',
-        'precio': 'USD 35.00',
-        'imagen': 'assets/img/mueble_tv.png',
-      },
-      {
-        'nombre': 'Comoda con 4 Cajones',
-        'precio': 'USD 22.00',
-        'imagen': 'assets/img/mueble_comoda.png',
-      },
-      {
-        'nombre': 'Mesa de Noche Moderna',
-        'precio': 'USD 15.00',
-        'imagen': 'assets/img/mueble_mesita.png',
-      },
-    ];
-
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(

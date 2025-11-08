@@ -27,20 +27,20 @@ class _ContactViewState extends State<ContactView> {
   List<Map<String, dynamic>> redesSociales = [
     {
       'icon': FontAwesomeIcons.youtube,
-      'url': 'https://www.facebook.com/erick.pasache.7',
+      'url': 'https://www.youtube.com/channel/UCa8QejxhW_NoiYxqjgmEEuA',
     },
     {
       'icon': FontAwesomeIcons.tiktok,
-      'url': 'https://www.facebook.com/erick.pasache.7',
+      'url': 'https://www.tiktok.com/@tu_mueble.oficial',
     },
     {
       'icon': FontAwesomeIcons.instagram,
-      'url': 'https://www.facebook.com/erick.pasache.7',
+      'url': 'https://www.instagram.com/tumueble.oficial/',
     },
-    {
-      'icon': FontAwesomeIcons.facebook,
-      'url': 'https://www.facebook.com/erick.pasache.7',
-    },
+    //{
+    //   'icon': FontAwesomeIcons.facebook,
+    //   'url': 'https://www.tiktok.com/@tu_mueble.oficial',
+    // },
   ];
 
   final formKey = GlobalKey<FormState>();

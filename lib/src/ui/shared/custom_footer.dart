@@ -158,20 +158,36 @@ class CustomFooter extends StatelessWidget {
   }
 
   Widget _socialIcons() {
-    final iconColor = Colors.grey.shade700;
+    final url_tiktok = 'https://www.tiktok.com/@tu_mueble.oficial';
+    final utl_instagram = 'https://www.instagram.com/tumueble.oficial/';
+    final url_youtube =
+        'https://www.youtube.com/channel/UCa8QejxhW_NoiYxqjgmEEuA';
     return Row(
-      children: const [
-        Icon(FontAwesomeIcons.twitter, color: Colors.grey, size: 20),
+      children: [
+        IconButton(
+          hoverColor: kColorFondo,
+          onPressed: () {
+            html.window.open(url_tiktok, '_blank');
+          },
+          icon: Icon(FontAwesomeIcons.tiktok, color: Colors.grey, size: 20),
+        ),
         SizedBox(width: 18),
-        Icon(FontAwesomeIcons.linkedin, color: Colors.grey, size: 20),
+        IconButton(
+          hoverColor: kColorFondo,
+          onPressed: () {
+            html.window.open(url_youtube, '_blank');
+          },
+          icon: Icon(FontAwesomeIcons.youtube, color: Colors.grey, size: 20),
+        ),
         SizedBox(width: 18),
-        Icon(FontAwesomeIcons.instagram, color: Colors.grey, size: 20),
+        IconButton(
+          hoverColor: kColorFondo,
+          onPressed: () {
+            html.window.open(utl_instagram, '_blank');
+          },
+          icon: Icon(FontAwesomeIcons.instagram, color: Colors.grey, size: 20),
+        ),
         SizedBox(width: 18),
-        Icon(FontAwesomeIcons.youtube, color: Colors.grey, size: 20),
-        SizedBox(width: 18),
-        Icon(FontAwesomeIcons.spotify, color: Colors.grey, size: 20),
-        SizedBox(width: 18),
-        Icon(FontAwesomeIcons.discord, color: Colors.grey, size: 20),
       ],
     );
   }

@@ -54,8 +54,8 @@ class _DetailPageState extends State<DetailPage> {
               builder: (context, constraints) {
                 // 🔍 Detecta tamaño de pantalla
                 bool isMobile = constraints.maxWidth < 800;
-                bool isTablet =
-                    constraints.maxWidth >= 800 && constraints.maxWidth < 1200;
+                // bool isTablet =
+                //     constraints.maxWidth >= 800 && constraints.maxWidth < 1200;
 
                 return Container(
                   width: double.infinity,

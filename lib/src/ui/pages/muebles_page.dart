@@ -30,56 +30,6 @@ class _MueblesPageState extends State<MueblesPage> {
 
   @override
   Widget build(BuildContext context) {
-    final List<Map<String, String>> productos = [
-      {
-        'nombre': 'Mueble de Cocina Moderna',
-        'precio': 'USD 29.00',
-        'imagen': 'assets/img/mueble_cocina.jpg',
-        'descripcion':
-            'Mueble de cocina moderna, fácil de armar. Incluye todos los planos para cortar y ensamblar.',
-        'dimensiones': '240 X 180 X 60 cm',
-      },
-      {
-        'nombre': 'Closet Minimalista 3 Puertas',
-        'precio': 'USD 25.00',
-        'imagen': 'assets/img/mueble_closet.png',
-        'descripcion':
-            'Mueble de cocina moderna, fácil de armar. Incluye todos los planos para cortar y ensamblar.',
-        'dimensiones': '240 X 180 X 60 cm',
-      },
-      {
-        'nombre': 'Escritorio de Oficina Compacto',
-        'precio': 'USD 19.00',
-        'imagen': 'assets/img/mueble_escritorio.png',
-        'descripcion':
-            'Mueble de cocina moderna, fácil de armar. Incluye todos los planos para cortar y ensamblar.',
-        'dimensiones': '240 X 180 X 60 cm',
-      },
-      {
-        'nombre': 'Centro de Entretenimiento TV',
-        'precio': 'USD 35.00',
-        'imagen': 'assets/img/mueble_tv.png',
-        'descripcion':
-            'Mueble de cocina moderna, fácil de armar. Incluye todos los planos para cortar y ensamblar.',
-        'dimensiones': '240 X 180 X 60 cm',
-      },
-      {
-        'nombre': 'Comoda con 4 Cajones',
-        'precio': 'USD 22.00',
-        'imagen': 'assets/img/mueble_comoda.png',
-        'descripcion':
-            'Mueble de cocina moderna, fácil de armar. Incluye todos los planos para cortar y ensamblar.',
-        'dimensiones': '240 X 180 X 60 cm',
-      },
-      {
-        'nombre': 'Mesa de Noche Moderna',
-        'precio': 'USD 15.00',
-        'imagen': 'assets/img/mueble_mesita.png',
-        'descripcion': 'Mueble de cocina moderna, fácil de armar.',
-        'dimensiones': '240 X 180 X 60 cm',
-      },
-    ];
-
     return Consumer<MuebleProvider>(
       builder: (context, value, child) => loading
           ? LoadingPage()
